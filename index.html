@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.7.2/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato:300,400">
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="app.js"></script>
+  <title>iOS Alarm Widget</title>
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <div class="nav navbar">
+        <div class="nav-left">
+          <i class="fas fa-signal"></i>
+          <span>Vodafone</span>
+          <i class="fas fa-wifi"></i>
+        </div>
+        <div class="time">8:05 AM</div>
+        <div class="nav-right">
+          <i class="fas fa-clock"></i>
+          <span>100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
+      </div>
+      <div class="alarm-header">
+        <a href="#" id="edit">Edit</a>
+        <span>Alarm</span>
+        <a href="#"><i class="fas fa-plus" id="add" onclick="addAlarm()"></i>       </a>
+      </div>
+    </div>
+    <div class="main" id="main">
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>08:05</h1>
+          <p class="alarm-title">Wake Up</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>09:05</h1>
+          <p class="alarm-title">Work</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>13:00</h1>
+          <p class="alarm-title">Lunch</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>13:30</h1>
+          <p class="alarm-title">Break</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>14:00</h1>
+          <p class="alarm-title">Work</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>16:00</h1>
+          <p class="alarm-title">Coffee</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>18:00</h1>
+          <p class="alarm-title">Go Home</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>19:00</h1>
+          <p class="alarm-title">Coffee &amp Study</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>22:00</h1>
+          <p class="alarm-title">Chill</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+      <div class="alarm" style="border-bottom: 1px solid #333">
+        <div class="alarm-left" id="alarm-left">
+          <h1>00:00</h1>
+          <p class="alarm-title">Sleep</p>
+        </div>
+        <div class="switch">
+          <div class="toggle">
+            <div class="inner"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <footer class="footer">
+      <a href="#" class="disabled">
+        <i class="fas fa-globe"></i>
+        <p>World Clock</p>
+      </a>
+      <a href="#" class="active">
+        <i class="fas fa-clock"></i>
+        <p>Alarm</p>
+      </a>
+      <a href="#" class="disabled">
+        <i class="fas fa-bed"></i>
+        <p>Bedtime</p>
+      </a>
+      <a href="#" class="disabled">
+        <i class="fas fa-stopwatch"></i>
+        <p>Stopwatch</p>
+      </a>
+      <a href="#" class="disabled">
+        <i class="far fa-clock"></i>
+        <p>Timer</p>
+      </a>
+    </footer>  
+  </div>
+</body>
+</html>
